@@ -68,7 +68,7 @@ const Hero = ({ searchQuery, setSearchQuery }: HeroProps) => {
           <TypingAnimation text="DevOps Portfolio" speed={80} />
         </h1>
         <p className="mt-4 text-lg text-muted-foreground font-medium">
-          Cloud Infrastructure | Container Orchestration | CI/CD Automation
+          Junior DevOps Engineer | Docker & CI/CD Pipelines | PHP App Deployment | Monitoring & Automation
         </p>
         
         <div className="mt-8 relative max-w-4xl mx-auto space-y-6">
@@ -110,21 +110,17 @@ const Hero = ({ searchQuery, setSearchQuery }: HeroProps) => {
 
         <p className="mt-8 text-lg leading-8 text-muted-foreground flex flex-wrap justify-center gap-2">
           {[
-            "DevOps",
-            "Cloud Architect",
-            "Kubernetes",
-            "Terraform",
-            "AWS",
-            "CI/CD",
-            "GitOps",
-            "Automation",
-            "Ansible",
             "Docker",
-            "Helm",
-            "CloudNative",
-            "OpenStack",
-            "IaC",
-            "MERN Stack",
+            "CI/CD Pipelines",
+            "PHP Deployment",
+            "Prometheus",
+            "Grafana",
+            "Automation",
+            "GitHub Actions",
+            "Jenkins",
+            "GitLab CI",
+            "AWS",
+            "Google Cloud",
             "Linux",
             "Bash"
           ].map((skill) => (

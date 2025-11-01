@@ -113,72 +113,17 @@ const Contact = () => {
         </ScrollReveal>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
+          {/* Contact Form - Coming Soon */}
           <ScrollReveal delay={100}>
             <div className="space-y-6">
               <div className="p-6 rounded-xl border border-border bg-card shadow-lg">
-                <div className="flex items-center gap-3 mb-6">
-                  <MessageSquare className="h-6 w-6 text-primary" />
-                  <h3 className="text-2xl font-semibold">Send a Message</h3>
+                <div className="flex flex-col items-center justify-center py-16 space-y-4">
+                  <MessageSquare className="h-16 w-16 text-muted-foreground/50" />
+                  <h3 className="text-2xl font-semibold">Coming Soon</h3>
+                  <p className="text-muted-foreground text-center max-w-md">
+                    Contact form will be available soon. Meanwhile, feel free to reach out through the social links.
+                  </p>
                 </div>
-
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Name
-                    </label>
-                    <Input
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Email
-                    </label>
-                    <Input
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="your.email@example.com"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Message
-                    </label>
-                    <Textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell me about your project or inquiry..."
-                      rows={5}
-                      required
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    className="w-full group"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? (
-                      "Sending..."
-                    ) : (
-                      <>
-                        Send Message
-                        <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </>
-                    )}
-                  </Button>
-                </form>
               </div>
             </div>
           </ScrollReveal>
