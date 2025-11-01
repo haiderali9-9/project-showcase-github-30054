@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Send, Github, Linkedin, MessageSquare } from "lucide-react";
+import { Mail, Send, Github, Linkedin, MessageSquare, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -66,18 +66,35 @@ const Contact = () => {
       label: "GitHub",
       href: "https://github.com/haiderali9-9",
       color: "hover:text-[#333] dark:hover:text-white",
+      display: "@haiderali9-9",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/hyderali99/",
       color: "hover:text-[#0A66C2]",
+      display: "linkedin.com/in/hyderali99",
     },
     {
       icon: Mail,
       label: "Email",
       href: "mailto:haidersarfraz0323@gmail.com",
       color: "hover:text-red-500",
+      display: "haidersarfraz0323@gmail.com",
+    },
+    {
+      icon: Mail,
+      label: "Alternative Email",
+      href: "mailto:haider.allee.99@gmail.com",
+      color: "hover:text-red-500",
+      display: "haider.allee.99@gmail.com",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      href: "tel:+923059903170",
+      color: "hover:text-green-500",
+      display: "+92 305 990 3170",
     },
   ];
 
@@ -190,7 +207,7 @@ const Contact = () => {
                       <div className="flex-1">
                         <div className="font-medium">{social.label}</div>
                         <div className="text-sm text-muted-foreground">
-                          {social.label === "Email" ? "haidersarfraz0323@gmail.com" : `@haiderali9-9`}
+                          {social.display}
                         </div>
                       </div>
                       <div className="transform group-hover:translate-x-1 transition-transform">
