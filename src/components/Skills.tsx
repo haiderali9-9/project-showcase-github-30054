@@ -6,25 +6,25 @@ const Skills = () => {
     {
       icon: Cloud,
       title: "Cloud Platforms",
-      skills: ["AWS", "Google Cloud", "Azure", "Kubernetes"],
+      skills: ["AWS", "Google Cloud"],
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: Container,
       title: "Containerization",
-      skills: ["Docker", "Kubernetes", "Helm", "Container Registry"],
+      skills: ["Docker", "Kubernetes", "Container Registry"],
       color: "from-cyan-500 to-teal-500",
     },
     {
       icon: GitBranch,
       title: "CI/CD & GitOps",
-      skills: ["Argo CD", "GitHub Actions", "Jenkins", "GitLab CI"],
+      skills: ["GitHub Actions", "Jenkins", "GitLab CI"],
       color: "from-teal-500 to-green-500",
     },
     {
       icon: Server,
       title: "Infrastructure",
-      skills: ["Terraform", "Ansible", "Prometheus", "Grafana"],
+      skills: ["Ansible", "Prometheus", "Grafana"],
       color: "from-green-500 to-emerald-500",
     },
     {
