@@ -38,8 +38,8 @@ const Hero = ({ searchQuery, setSearchQuery }: HeroProps) => {
       title: "CI/CD Pipelines",
       description: "GitHub Actions workflows",
       icon: GitBranch,
-      route: "/cicd-pipelines",
-      available: false,
+      route: "/pipelines",
+      available: true,
     },
   ];
   
